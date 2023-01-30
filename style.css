@@ -1,0 +1,74 @@
+#clkContainer{
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url('clk.png') no-repeat center center/cover;
+    background-size:100%;
+}
+#hour,#minute,#second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    background: rgb(253, 253, 253);
+    width: 1.8%;
+    height: 33%;
+    top: 17%;
+    left: 49.5%;
+   
+}
+#minute{
+    background: rgb(255, 255, 255);
+    width: 1.6%;
+    height: 36%;
+    top: 14%;
+    left: 49.5%;
+    opacity: 0.8;
+   
+}
+#second{
+    background:rgb(251, 252, 251);
+    width: 1%;
+    height: 38%;
+    top: 12%;
+    left: 49.5%;
+    opacity: 0.8;
+   
+
+}
+.text{
+    text-align: center;
+    
+}
+.header{
+    margin: auto;
+     width: 26rem;
+     height: 26rem;
+     border-radius: 50%;
+     box-sizing: border-box;
+     border-top: 8px solid rgb(71, 9, 243);
+     border-left: 8px solid rgb(245, 6, 106);
+     border-right: 8px solid rgb(79, 7, 224);
+     animation: header .7s infinite linear;
+     font-size: 3rem;
+     padding-top: 20px;
+    
+ }
+ @keyframes header {
+     to {
+         transform: rotate(360deg);
+     }
+ }
+ @media(max-width:700px) {
+    .header{
+        width: 12rem;
+        height: 12rem;
+    }
+    .header h1{
+        display: none;
+        
+    }
+ }
